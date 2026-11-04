@@ -1,4 +1,4 @@
-import { auth } from '@clerk/nextjs/server'
+import { auth } from '@/lib/auth'
 import { notFound } from 'next/navigation'
 import NewResumePage from '../new/page'
 import { getSupabaseAdmin } from '@/lib/supabase-admin'

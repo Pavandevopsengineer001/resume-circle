@@ -1,4 +1,4 @@
-import { ClerkProvider } from '@clerk/nextjs'
+// import { ClerkProvider } from '@clerk/nextjs'
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
@@ -18,7 +18,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className="antialiased">
-        <ClerkProvider dynamic>{children}</ClerkProvider>
+        {/* <ClerkProvider dynamic> */}
+          {children}
+          {/* </ClerkProvider> */}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

@@ -1,6 +1,6 @@
 'use server'
 
-import { auth, currentUser } from '@clerk/nextjs/server'
+import { auth, currentUser } from '@/lib/auth'
 import { revalidatePath } from 'next/cache'
 import { getSupabaseAdmin } from '@/lib/supabase-admin'
 import type { ResumeContent } from '@/lib/resume-types'

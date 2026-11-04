@@ -1,4 +1,4 @@
-import { auth } from '@clerk/nextjs/server'
+import { auth } from '@/lib/auth'
 import Razorpay from 'razorpay'
 import { NextResponse } from 'next/server'
 

@@ -1,5 +1,4 @@
-import { SignUp } from '@clerk/nextjs'
-
+// Clerk is switched off for now. Restore the <SignUp> component from git when auth is turned back on.
 export default function SignUpPage() {
-  return <main className="grid min-h-screen place-items-center bg-[#f8fbff] p-5"><SignUp routing="path" path="/sign-up" signInUrl="/sign-in" fallbackRedirectUrl="/dashboard" /></main>
+  return <main className="grid min-h-screen place-items-center bg-[#f8fbff] p-5"><div className="max-w-sm rounded-3xl border border-[#e0e8f3] bg-white p-8 text-center shadow-sm"><h1 className="text-2xl font-bold text-[#10203c]">Accounts are coming soon</h1><p className="mt-3 text-sm leading-6 text-[#71809a]">Sign-in is turned off while we build. You can still create and preview your resume.</p><a href="/builder/new" className="mt-6 inline-flex h-11 items-center justify-center rounded-full bg-[#0b3be0] px-6 text-sm font-bold text-white">Create resume</a><a href="/" className="mt-3 block text-sm font-semibold text-[#71809a]">Back to home</a></div></main>
 }
